@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/lexendfont"
+            android:text="Welcome Back !"
+            android:textColor="#490008"
+            android:textFontWeight="800"
+            android:textSize="70px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/lexendfont"
+            android:text="Email"
+            android:textColor="#877E7F" />
+
+        <EditText
+            android:id="@+id/user_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="2dp"
+            android:ems="15"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/lexendfont"
+            android:text="Password"
+            android:textColor="#877E7F" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/user_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:ems="15"
+                android:inputType="textEmailAddress"/>
+
+            <ImageButton
+                android:id="@+id/menu"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="-40dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#FFFFFF"
+                android:onClick="openDrawer"
+                android:src="@drawable/view" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/lexendfont"
+            android:text="Forgot Password?"
+            android:textColor="#DC1A47"
+            android:textFontWeight="800" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#D80032"
+            android:onClick="sendMessage"
+            android:text="Login" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center">
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                android:background="#877E7F" />
+
+            <TextView
+                android:id="@+id/myTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="OR"
+                android:fontFamily="@font/lexendfont"
+                android:layout_marginLeft="20dp"
+                android:textColor="#877E7F"/>
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:background="#877E7F" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/google"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#BFBFBF"
+            android:drawableLeft="@drawable/google"
+            android:onClick="sendMessage"
+            android:text="Sign In With Google"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Don't Have An Account?"
+                android:fontFamily="@font/lexendfont"
+                android:layout_marginLeft="20dp"
+                android:textColor="#877E7F"/>
+
+            <TextView
+                android:id="@+id/signupLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Sign Up"
+                android:fontFamily="@font/lexendfont"
+                android:layout_marginLeft="5dp"
+                android:textFontWeight="800"
+                android:textColor="#DC1A47"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>
